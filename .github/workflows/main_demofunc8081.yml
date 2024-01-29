@@ -3,10 +3,12 @@
 
 name: Build and deploy dotnet core app to Azure Function App - demofunc8081
 
-on: |+
+on:
   push:
     branches:
       - main
+    paths:
+      - 'demofunc8081/**'
   workflow_dispatch:
 
 env:
